@@ -1,0 +1,23 @@
+int multiplication (int, int);
+int main () {
+	int i = 1;
+	int a = 2;
+	int b = 3;
+	int c = 4;
+	int d = 5;
+	for (i = 0; i < 10; i++) {
+		if (i > 5) {
+			a += b;
+		}
+		
+		else {
+			c += d;
+		}
+	}
+	
+	i = multiplication(a,c);
+}
+
+int multiplication (num1, num2) {
+	return num1 * num 2;
+}

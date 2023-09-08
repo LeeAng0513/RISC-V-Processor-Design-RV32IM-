@@ -1,0 +1,44 @@
+	LUI	x5, 0x02000 # load initial address in register
+main:
+	LW	x6,  x5, 0x000 # i = 1
+	LW	x7,  x5, 0x004 # a = 2
+	LW	x28, x5, 0x008 # b = 3
+	NOP (*modelsim error?)
+	LW	x29, x5, 0x00C # c = 4
+	LW	x30, x5, 0x010 # d = 5
+	ORI	x6, x0, 0x000 # i = 0
+	ORI	x9, x0, 0x00A # 10
+	ORI	x18, x0, 0x005 # 5
+loop:
+	BGE	x6, x9, loop_end
+	NOP
+	NOP
+	BLT	x18, x6, greater_5 # if i > 5
+	NOP
+	NOP
+	ADD	x29, x29, x30 # c += d
+	JAL	x1, if_end
+	NOP
+	NOP
+greater_5:
+	ADD	x7, x7, x28 # a += b
+if_end:
+	ADDI	x6, x6, 0x001 # i++
+	JAL	x1, loop
+	NOP
+	NOP
+loop_end:
+	JAL	x1, multiplication
+	NOP
+	NOP
+	ORI	x6, x10, 0x000
+	JAL	x1, exit
+
+multiplication:
+	ORI	x12, x7, 0x000
+	ORI	x13, x29, 0x000
+	MUL	x10, x12, x13
+	JALR	x1, x1, 0x000
+	NOP
+	NOP	
+exit:	
