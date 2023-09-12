@@ -18,14 +18,15 @@ The core has been tested the functionality by Verilog testbench.
 | 0x0000 8000 - 0x0000 8FFF | Instruction Memory (I-cache) |
 | 0x0200 0000 - 0x0200 0FFF | Data Memory (D-cache)        |
 
-:warning: : you can adjust the range as you like, it is just a assumption.
+:warning: : you can adjust the range as you like, it is just an assumption.
 
 # Testbench
 A basic Verilog based testbench for each module is provided to test the functionality only, not the performance. <br>
-You can just insert the test bench file into your simulator to simulate the **data path** test bench to observe the wave form.
+You can just insert the test bench file into your simulator to simulate the **data path** test bench to observe the waveform.
 
 # Remark
-- M extention only need only clock cycle to compute the result in EX stage.
-- the "**reg**" actually treat like a register, and the "**wire**" actually are using for logic combination, so it is nearly pure logic design.
-- It is functional, however it is a incomplete project, it will support more instructions and extensions in later update. Stay tuned.
-- Next Goal: support FENCE, ECALL, EBREAK and CSR instruction.
+- M extension only needs only clock cycle to compute the result in the EX stage.
+- The "**reg**" actually treats like a register, and the "**wire**" is actually used for logic combination, so it is nearly pure logic design.
+- It is functional, however it is an incomplete project, It will support more instructions and extensions in later update. Stay tuned.
+- In later update, the development will separate into two directions, high performance design (multicore, multithread, support more extension) and low performance (like microcontroller, support various of I/O device)
+- Next Goal: support FENCE, ECALL, EBREAK, CSR instruction, and 2 HART in one core.
