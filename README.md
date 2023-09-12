@@ -29,4 +29,4 @@ You can just insert the test bench file into your simulator to simulate the **da
 - The "**reg**" actually treats like a register, and the "**wire**" is actually used for logic combination, so it is nearly pure logic design.
 - It is functional, however it is an incomplete project, It will support more instructions and extensions in later update. Stay tuned.
 - In later update, the development will separate into two directions, high performance design (multicore, multithread, support more extension) and low performance (like microcontroller, support various of I/O device)
-- Next Goal: support FENCE, ECALL, EBREAK, CSR instruction, and 2 HART in one core.
+- Next Goal: support FENCE, ECALL, EBREAK, CSR instruction, 2 HART in one core (FENCE.I), superscalar design.
