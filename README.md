@@ -28,3 +28,4 @@ You can just insert the test bench file into your simulator to simulate the **da
 - M extention only need only clock cycle to compute the result in EX stage.
 - the "**reg**" actually treat like a register, and the "**wire**" actually are using for logic combination, so it is nearly pure logic design.
 - It is functional, however it is a incomplete project, it will support more instructions and extensions in later update. Stay tuned.
+- Next Goal: support FENCE, ECALL, EBREAK and CSR instruction.
