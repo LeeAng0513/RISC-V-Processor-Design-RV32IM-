@@ -7,6 +7,7 @@ The core has been tested the functionality by Verilog testbench.
 
 # Feature
 - 32-bit base RISC-V Core
+- in-order execution
 - Support RV32I instructions except for FENCE instructions and ECALL/EBREAK
 - Suport M extension.
 - With 5 stage pipeline (ID :arrow_right: IF :arrow_right: EX :arrow_right: MEM :arrow_right: WB)
@@ -28,5 +29,5 @@ You can just insert the test bench file into your simulator to simulate the **da
 - M extension only needs only clock cycle to compute the result in the EX stage.
 - The "**reg**" actually treats like a register, and the "**wire**" is actually used for logic combination, so it is nearly pure logic design.
 - The project development will be separated into two directions, high-performance design (multicore, multithread, support more extension) and low performance (like microcontroller, support various I/O devices).
-- Currently, I am learning: FENCE, ECALL, EBREAK, CSR instruction, FENCE.I, multiple HART design, I/O communication and design, and superscalar design.
+- Currently, I am learning: out-order execution, FENCE, ECALL, EBREAK, CSR instruction, multiple HART design, I/O communication and design, and superscalar design.
 - - It is functional. However, it is an incomplete project, It will support more instructions, extensions, and functions in a later update. Stay tuned.
