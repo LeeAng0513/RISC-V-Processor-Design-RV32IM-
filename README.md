@@ -2,9 +2,6 @@
 A 32-bit RISC-V core is designed by written in Verilog. <br>
 The core has been tested the functionality by Verilog testbench.
 
-# Overview
-![Graph/Data Path.png](https://github.com/LeeAng0513/RISC-V-Processor-Design-RV32IM-/blob/main/Graph/Data%20Path.png?raw=true)
-
 # Feature
 - 32-bit base RISC-V Core
 - in-order execution
