@@ -26,7 +26,7 @@ parameter initial_I_cache_addr = 32'h00000000 // initial user program instructio
 reg [31:0] pc; // program counter
 
 // wire
-wire [31:0] next_pc;  // offset of next address (4 byte)
+wire [31:0] next_pc;  // next address (+4 byte)
 wire [28:0] carry_bit_adder; // carry bit of pc + 4 adder
 wire stall_ctrl; // stall control detection (if stall or pc reach to D-cache address)
 
