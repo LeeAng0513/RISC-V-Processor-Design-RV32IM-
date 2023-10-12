@@ -1,6 +1,6 @@
 /**********************************************************************
 Project: Develop 32-bit RISC-V Processor
-Module: data_path_tb.v
+Module: core_tb.v
 Version: 1
 Date Created: 1/7/2023
 Created By: Lee Ang
