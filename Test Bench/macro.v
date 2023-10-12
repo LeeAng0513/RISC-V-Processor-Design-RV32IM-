@@ -1,11 +1,11 @@
 /*********************************************************************************
-Project: MIPS 5-stage pipeline
-Module: macro.v [global]
+Project: Develop 32-bit RISC-V Processor
+Module: macro.v
 Version: 1
-Date Created: 16/08/2021
+Date Created: 01/07/2023
 Created By: Lee Ang
 Code Type: Verilog
-Description: -
+Description: Clock Period
 *********************************************************************************/
 
 // Clock period and its derivatives.
